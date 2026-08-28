@@ -1,0 +1,44 @@
+{
+  "name": "@yopadd/errors",
+  "version": "1.0.0",
+  "description": "A type-safe error management library for TypeScript. Define, build, and handle errors with a fluent API",
+  "type": "module",
+  "main": "./dist/lib.cjs",
+  "module": "./dist/lib.mjs",
+  "types": "./dist/lib.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/lib.d.cts",
+      "default": "./dist/lib.cjs"
+    },
+    "import": {
+      "types": "./dist/lib.d.mts",
+      "default": "./dist/lib.mjs"
+    }
+  },
+  "scripts": {
+    "test": "tsx --test",
+    "build": "pkgroll",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "error",
+    "typescript",
+    "error-handling",
+    "fluent-api",
+    "type-safe"
+  ],
+  "author": "Yoann <yoann.bourdex@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yopadd/errors"
+  },
+  "homepage": "https://github.com/yopadd/errors#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "pkgroll": "^2.27.1",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3"
+  }
+}
