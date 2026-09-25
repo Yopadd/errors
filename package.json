@@ -1,6 +1,6 @@
 {
   "name": "@yopadd/errors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A type-safe error management library for TypeScript. Define, build, and handle errors with a fluent API",
   "type": "module",
   "main": "./dist/lib.cjs",
