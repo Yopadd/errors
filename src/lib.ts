@@ -59,7 +59,7 @@ export class ErrorHandlerBuilder<Code = string, Result = never> {
   }
 
   when<C extends Code, R>(
-    ...args: [...C[], (err: RuntimeError) => R]
+    ...args: [...C[], (err: RuntimeError<C>) => R]
   ): Exclude<Code, C> extends never
     ? ErrorHandlerBuilder<never, Result | R>
     : Omit<
